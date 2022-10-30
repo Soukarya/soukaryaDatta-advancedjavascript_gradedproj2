@@ -3,7 +3,7 @@ function login(){
     var password = document.getElementById("password").value;
     localStorage.setItem("username",username);
     localStorage.setItem('password',password);
-    if(username == 'user' && password == 'pass1234'){
+    if(username == 'user' && password == 'password'){
         window.location = 'resume.html';
     }else{
         const errorDiv = document.getElementById('invalidCredentials');
