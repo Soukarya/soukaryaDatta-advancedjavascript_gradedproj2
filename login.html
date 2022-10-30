@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+   <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <form onsubmit="login();return false">
+        <div class="container">
+            <div id="invalidCredentials">
+                <span></span>
+            </div>
+                <input type="text" placeholder="Username" name="username" id="username" required><br/>
+                <input type="password" placeholder="Password" name="password" id="password" required><br/>
+                <button type="submit">Login</button>
+        </div>
+    </form>
+    <script src="js/login.js"></script>
+</body>
+</html>
