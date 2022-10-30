@@ -1,8 +1,8 @@
 const errorElement = `
-<div style="padding: 40px;">
-	<img width='100' height='100' src='images/no-results.png' alt='No results found!'/>
+<div style="text-align: center; padding: 20px;">
+	<img style="width:100 ; height:100" src='./images/no-results.png' alt='No results found!'/>
+    <span style="position:absolute;">No results found!</span>
 </div>
-<span>No results found!</span>
 `;
 
 function previousButton() {
