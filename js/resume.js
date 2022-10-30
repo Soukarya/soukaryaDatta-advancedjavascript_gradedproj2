@@ -1,5 +1,5 @@
 const errorElement = `
-<div style="padding: 20px;">
+<div style="padding: 40px;">
 	<img width='100' height='100' src='images/no-results.png' alt='No results found!'/>
 </div>
 <span>No results found!</span>
@@ -82,16 +82,16 @@ function getCompanyDetails(companyInfo) {
 }
 
 function getProjectDetails(project) {
-	let projectField = document.getElementById('project');
-	projectField.innerHTML = "";
+	let projects = document.getElementById('projects');
+	projects.innerHTML = "";
 	let projectName = project.name;
 	let projectDescription = project.description;
-	let projectNameField = document.createElement('b');
-	projectField.innerText = projectName + ': ';
-	let projectDescField = document.createElement('span');
-	projectDescField.innerText = projectDescription;
-	projectField.appendChild(projectNameField);
-	projectField.appendChild(projectDescField);
+	let projectNameCreateElement = document.createElement('b');
+	projects.innerText = projectName + ': ';
+	let projectDesc = document.createElement('span');
+	projectDesc.innerText = projectDescription;
+	projects.appendChild(projectNameCreateElement);
+	projects.appendChild(projectDesc);
 }
 
 function getEducationDetails(education) {
@@ -128,7 +128,7 @@ function getAchievementsDetails(achievementsInfo) {
 	})
 }
 
-function disableNavButtons(resultSet) {
+function disableNavigationButtons(resultSet) {
 	const getIds = window.searchResults.map((s) => s.id);
 	const resultIdx = getIds.indexOf(resultSet.id);
 	document.getElementById('prev-button').disabled = resultIdx === 0;
@@ -188,7 +188,7 @@ function applicantInfo(results) {
 	getEducationDetails(results.education);
 	getInternshipDetails(results.Internship);
 	getAchievementsDetails(results.achievements.Summary);
-	disableNavButtons(results);
+	disableNavigationButtons(results);
 }
 
 window.searchResults = data.resume;
