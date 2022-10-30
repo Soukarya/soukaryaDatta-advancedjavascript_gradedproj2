@@ -11,7 +11,7 @@ button, button > input {
 .resume-header {
     display: block;
     text-align: center;
-    background-color: aqua;
+    background-color: rgb(135, 240, 230);
 }
 
 #name {
@@ -25,8 +25,9 @@ button, button > input {
 }
 
 .heading-label {
-    background-color: lightpink;
+    background-color: rgb(255, 200, 225);
     padding: 10px;
+    height: 50%;
 }
 
 .applicant-info {
