@@ -82,16 +82,16 @@ function getCompanyDetails(companyInfo) {
 }
 
 function getProjectDetails(project) {
-	let projects = document.getElementById('projects');
-	projects.innerHTML = "";
+	let projectField = document.getElementById('project');
+	projectField.innerHTML = "";
 	let projectName = project.name;
 	let projectDescription = project.description;
-	let projectName = document.createElement('b');
-	projects.innerText = projectName + ': ';
-	let projectDesc = document.createElement('span');
-	projectDesc.innerText = projectDescription;
-	projects.appendChild(projectNameField);
-	projects.appendChild(projectDescField);
+	let projectNameField = document.createElement('b');
+	projectField.innerText = projectName + ': ';
+	let projectDescField = document.createElement('span');
+	projectDescField.innerText = projectDescription;
+	projectField.appendChild(projectNameField);
+	projectField.appendChild(projectDescField);
 }
 
 function getEducationDetails(education) {
